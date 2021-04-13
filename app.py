@@ -12,10 +12,8 @@ CORS(app, resources={
         "origins": "*"
     }
 })
-app.config['CORS HEADER'] = 'Content-Type'
 
 @app.route('/')
-@cross_origin()
 def home():
     return render_template('index.html')
 
